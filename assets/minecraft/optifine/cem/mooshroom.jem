@@ -7,7 +7,7 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -19, -2],
-			"texture": "textures/entity/cow/red_mooshroom.png",
+			"texture": "brown_mooshroom.png",
 			"textureSize": [64, 57],
 			"submodels": [
 				{
@@ -81,11 +81,11 @@
 							"boxes": [
 								{
 									"coordinates": [0, -0.25, -6, 0, 7, 12],
-									"uvWest": [50, 35, 62, 44]
+									"uvWest": [50, 35, 62, 45]
 								},
 								{
 									"coordinates": [-6, -0.25, 0, 12, 7, 0],
-									"uvNorth": [50, 35, 62, 44]
+									"uvNorth": [50, 35, 62, 45]
 								}
 							]
 						},
@@ -97,11 +97,11 @@
 							"boxes": [
 								{
 									"coordinates": [0, -0.25, -6, 0, 7, 12],
-									"uvWest": [50, 35, 62, 44]
+									"uvWest": [50, 35, 62, 45]
 								},
 								{
 									"coordinates": [-6, -0.25, 0, 12, 7, 0],
-									"uvNorth": [50, 35, 62, 44]
+									"uvNorth": [50, 35, 62, 45]
 								}
 							]
 						},
@@ -233,11 +233,11 @@
 							"boxes": [
 								{
 									"coordinates": [0, -0.25, -6, 0, 7, 12],
-									"uvEast": [62, 35, 50, 44]
+									"uvEast": [62, 35, 50, 45]
 								},
 								{
 									"coordinates": [-6, -0.25, 0, 12, 7, 0],
-									"uvNorth": [50, 35, 62, 44]
+									"uvNorth": [50, 35, 62, 45]
 								}
 							]
 						},
@@ -246,6 +246,7 @@
 							"invertAxis": "xy",
 							"mirrorTexture": "u",
 							"translate": [3, 1, -6],
+							"texture": "textures/entity/cow/red_mooshroom.png",
 							"submodels": [
 								{
 									"id": "r_eye_top",
@@ -282,6 +283,7 @@
 																	"invertAxis": "xy",
 																	"mirrorTexture": "u",
 																	"translate": [0, 1, 0],
+																	"texture": "brown_mooshroom.png",
 																	"boxes": [
 																		{
 																			"coordinates": [0.5, -1, -1.055, 1, 1, 1.05],
@@ -314,6 +316,7 @@
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
 											"translate": [0, 1, 0],
+											"texture": "brown_mooshroom.png",
 											"boxes": [
 												{
 													"coordinates": [0, -1, -0.08, 1, 1, 1.075],
@@ -336,6 +339,7 @@
 							"invertAxis": "xy",
 							"mirrorTexture": "u",
 							"translate": [-3, 1, -6],
+							"texture": "textures/entity/cow/red_mooshroom.png",
 							"submodels": [
 								{
 									"id": "l_eye_top",
@@ -372,6 +376,7 @@
 																	"invertAxis": "xy",
 																	"mirrorTexture": "u",
 																	"translate": [0, 1, 0],
+																	"texture": "brown_mooshroom.png",
 																	"boxes": [
 																		{
 																			"coordinates": [-0.5, -1, -0.055, 1, 1, 1.05],
@@ -404,6 +409,7 @@
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
 											"translate": [0, 1, 0],
+											"texture": "brown_mooshroom.png",
 											"boxes": [
 												{
 													"coordinates": [-1, -1, -0.08, 1, 1, 1.075],
@@ -559,7 +565,7 @@
 			"id": "leg1",
 			"invertAxis": "xy",
 			"translate": [4, 0, -7],
-			"texture": "textures/entity/cow/red_mooshroom.png",
+			"texture": "brown_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -578,7 +584,7 @@
 			"id": "leg2",
 			"invertAxis": "xy",
 			"translate": [-4, 0, -7],
-			"texture": "textures/entity/cow/red_mooshroom.png",
+			"texture": "brown_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -597,7 +603,7 @@
 			"id": "leg3",
 			"invertAxis": "xy",
 			"translate": [4, 0, 5],
-			"texture": "textures/entity/cow/red_mooshroom.png",
+			"texture": "brown_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -616,7 +622,7 @@
 			"id": "leg4",
 			"invertAxis": "xy",
 			"translate": [-4, 0, 5],
-			"texture": "textures/entity/cow/red_mooshroom.png",
+			"texture": "brown_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
