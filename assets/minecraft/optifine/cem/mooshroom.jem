@@ -1,14 +1,12 @@
 {
 	"credit": "Made with Blockbench",
-	"textureSize": [256, 128],
+	"textureSize": [64, 57],
 	"models": [
 		{
 			"part": "body",
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -19, -2],
-			"texture": "brown_mooshroom.png",
-			"textureSize": [64, 57],
 			"submodels": [
 				{
 					"id": "Created_by_FreshLX_for_Fresh_Animations",
@@ -246,7 +244,6 @@
 							"invertAxis": "xy",
 							"mirrorTexture": "u",
 							"translate": [3, 1, -6],
-							"texture": "textures/entity/cow/red_mooshroom.png",
 							"submodels": [
 								{
 									"id": "r_eye_top",
@@ -283,7 +280,6 @@
 																	"invertAxis": "xy",
 																	"mirrorTexture": "u",
 																	"translate": [0, 1, 0],
-																	"texture": "brown_mooshroom.png",
 																	"boxes": [
 																		{
 																			"coordinates": [0.5, -1, -1.055, 1, 1, 1.05],
@@ -316,7 +312,6 @@
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
 											"translate": [0, 1, 0],
-											"texture": "brown_mooshroom.png",
 											"boxes": [
 												{
 													"coordinates": [0, -1, -0.08, 1, 1, 1.075],
@@ -339,7 +334,6 @@
 							"invertAxis": "xy",
 							"mirrorTexture": "u",
 							"translate": [-3, 1, -6],
-							"texture": "textures/entity/cow/red_mooshroom.png",
 							"submodels": [
 								{
 									"id": "l_eye_top",
@@ -376,7 +370,6 @@
 																	"invertAxis": "xy",
 																	"mirrorTexture": "u",
 																	"translate": [0, 1, 0],
-																	"texture": "brown_mooshroom.png",
 																	"boxes": [
 																		{
 																			"coordinates": [-0.5, -1, -0.055, 1, 1, 1.05],
@@ -409,7 +402,6 @@
 											"invertAxis": "xy",
 											"mirrorTexture": "u",
 											"translate": [0, 1, 0],
-											"texture": "brown_mooshroom.png",
 											"boxes": [
 												{
 													"coordinates": [-1, -1, -0.08, 1, 1, 1.075],
@@ -565,8 +557,6 @@
 			"id": "leg1",
 			"invertAxis": "xy",
 			"translate": [4, 0, -7],
-			"texture": "brown_mooshroom.png",
-			"textureSize": [64, 57],
 			"boxes": [
 				{
 					"coordinates": [-6, 0, 5, 4, 12, 4],
@@ -584,8 +574,6 @@
 			"id": "leg2",
 			"invertAxis": "xy",
 			"translate": [-4, 0, -7],
-			"texture": "brown_mooshroom.png",
-			"textureSize": [64, 57],
 			"boxes": [
 				{
 					"coordinates": [2, 0, 5, 4, 12, 4],
@@ -603,8 +591,6 @@
 			"id": "leg3",
 			"invertAxis": "xy",
 			"translate": [4, 0, 5],
-			"texture": "brown_mooshroom.png",
-			"textureSize": [64, 57],
 			"boxes": [
 				{
 					"coordinates": [-6, 0, -7, 4, 12, 4],
@@ -622,8 +608,6 @@
 			"id": "leg4",
 			"invertAxis": "xy",
 			"translate": [-4, 0, 5],
-			"texture": "brown_mooshroom.png",
-			"textureSize": [64, 57],
 			"boxes": [
 				{
 					"coordinates": [2, 0, -7, 4, 12, 4],
