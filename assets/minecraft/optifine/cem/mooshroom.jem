@@ -7,7 +7,7 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -19, -2],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"submodels": [
 				{
@@ -74,23 +74,18 @@
 							]
 						},
 						{
-							"id": "mushroom4",
+							"id": "mushroom2",
 							"invertAxis": "xy",
-							"translate": [3, 6, 9],
-							"rotate": [90, 0, 0.5],
+							"translate": [2, 2, 9],
+							"rotate": [90, 0, -39],
 							"boxes": [
 								{
-									"coordinates": [-0.10449, -0.25, -3.05282, 0, 5, 6],
-									"uvWest": [22, 44, 28, 48]
+									"coordinates": [0, -0.25, -6, 0, 7, 12],
+									"uvWest": [50, 35, 62, 44]
 								},
 								{
-									"coordinates": [-3.10449, -0.25, -0.05282, 6, 5, 0],
-									"uvNorth": [22, 44, 28, 48],
-									"uvEast": [22, 44, 28, 48],
-									"uvSouth": [22, 44, 28, 48],
-									"uvWest": [22, 44, 28, 48],
-									"uvUp": [22, 43, 28, 49],
-									"uvDown": [22, 43, 29, 48]
+									"coordinates": [-6, -0.25, 0, 12, 7, 0],
+									"uvNorth": [50, 35, 62, 44]
 								}
 							]
 						},
@@ -98,32 +93,29 @@
 							"id": "mushroom3",
 							"invertAxis": "xy",
 							"translate": [-3, -6, 9],
-							"rotate": [90, 0, 0.5],
+							"rotate": [90, 0, 3],
 							"boxes": [
 								{
-									"coordinates": [4, -0.25, -5, 0, 5, 6],
-									"uvWest": [0, 44, 6, 48]
+									"coordinates": [0, -0.25, -6, 0, 7, 12],
+									"uvWest": [50, 35, 62, 44]
 								},
 								{
-									"coordinates": [1, -0.25, -2, 6, 5, 0],
-									"uvNorth": [0, 44, 6, 48]
+									"coordinates": [-6, -0.25, 0, 12, 7, 0],
+									"uvNorth": [50, 35, 62, 44]
 								}
 							]
 						},
 						{
-							"id": "mushroom2",
+							"id": "mushroom",
 							"invertAxis": "xy",
-							"translate": [-8, 3, 9],
-							"rotate": [90, 0, -91.5],
+							"translate": [0, 6, -4],
 							"boxes": [
-								{
-									"coordinates": [0, -0.55, -7.1, 0, 4, 4],
-									"uvWest": [13, 44, 17, 48]
-								},
-								{
-									"coordinates": [-2, -0.55, -5.37604, 4, 4, 0],
-									"uvNorth": [13, 44, 17, 48]
-								}
+								{"coordinates": [0, 0, 13, 6, 0, 4], "textureOffset": [18, 44]},
+								{"coordinates": [3, -3, 13, 0, 6, 4], "textureOffset": [22, 45]},
+								{"coordinates": [-3, -5, 13, 0, 4, 4], "textureOffset": [13, 45]},
+								{"coordinates": [-5, -3, 13, 4, 0, 4], "textureOffset": [9, 44]},
+								{"coordinates": [1, -13, 13, 0, 6, 4], "textureOffset": [4, 45]},
+								{"coordinates": [-2, -10, 13, 6, 0, 4], "textureOffset": [-4, 44]}
 							]
 						}
 					]
@@ -234,6 +226,22 @@
 							]
 						},
 						{
+							"id": "mushroom1",
+							"invertAxis": "xy",
+							"translate": [0, 4, -3],
+							"rotate": [0, 33, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -0.25, -6, 0, 7, 12],
+									"uvEast": [62, 35, 50, 44]
+								},
+								{
+									"coordinates": [-6, -0.25, 0, 12, 7, 0],
+									"uvNorth": [50, 35, 62, 44]
+								}
+							]
+						},
+						{
 							"id": "right_eye",
 							"invertAxis": "xy",
 							"mirrorTexture": "u",
@@ -249,7 +257,7 @@
 									"id": "r_eye_pupil",
 									"invertAxis": "xy",
 									"mirrorTexture": "u",
-									"translate": [0.5, -0.5, 0],
+									"translate": [-0.5, -0.5, 1],
 									"submodels": [
 										{
 											"id": "r_eye_pupil_in",
@@ -276,13 +284,13 @@
 																	"translate": [0, 1, 0],
 																	"boxes": [
 																		{
-																			"coordinates": [0.5, -1, -0.055, 0, 1, 0.05],
-																			"uvNorth": [27, 37, 28, 38],
-																			"uvEast": [27, 37, 28, 38],
-																			"uvSouth": [28, 37, 27, 38],
-																			"uvWest": [27, 37, 28, 38],
-																			"uvUp": [28, 38, 27, 37],
-																			"uvDown": [28, 38, 27, 37],
+																			"coordinates": [0.5, -1, -1.055, 1, 1, 1.05],
+																			"uvNorth": [22, 30, 23, 31],
+																			"uvEast": [22, 30, 23, 31],
+																			"uvSouth": [23, 30, 22, 31],
+																			"uvWest": [22, 30, 23, 31],
+																			"uvUp": [23, 31, 22, 30],
+																			"uvDown": [23, 31, 22, 30],
 																			"sizeAdd": 0.005
 																		}
 																	]
@@ -309,12 +317,12 @@
 											"boxes": [
 												{
 													"coordinates": [0, -1, -0.08, 1, 1, 1.075],
-													"uvNorth": [26, 36, 28, 37],
-													"uvEast": [26, 36, 27, 37],
-													"uvSouth": [28, 36, 26, 37],
-													"uvWest": [27, 36, 28, 37],
-													"uvUp": [28, 36, 26, 37],
-													"uvDown": [28, 37, 26, 36],
+													"uvNorth": [21, 29, 23, 30],
+													"uvEast": [21, 29, 22, 30],
+													"uvSouth": [23, 29, 21, 30],
+													"uvWest": [22, 29, 23, 30],
+													"uvUp": [23, 29, 21, 30],
+													"uvDown": [23, 30, 21, 29],
 													"sizeAdd": 0.015
 												}
 											]
@@ -366,13 +374,13 @@
 																	"translate": [0, 1, 0],
 																	"boxes": [
 																		{
-																			"coordinates": [-0.5, -1, -0.055, 1, 1, 0.05],
-																			"uvNorth": [35, 37, 36, 38],
-																			"uvEast": [35, 37, 36, 38],
-																			"uvSouth": [36, 37, 35, 38],
-																			"uvWest": [35, 37, 36, 38],
-																			"uvUp": [36, 38, 35, 37],
-																			"uvDown": [36, 38, 35, 37],
+																			"coordinates": [-0.5, -1, -0.055, 1, 1, 1.05],
+																			"uvNorth": [24, 30, 25, 31],
+																			"uvEast": [24, 30, 25, 31],
+																			"uvSouth": [25, 30, 24, 31],
+																			"uvWest": [24, 30, 25, 31],
+																			"uvUp": [25, 31, 24, 30],
+																			"uvDown": [25, 31, 24, 30],
 																			"sizeAdd": 0.005
 																		}
 																	]
@@ -399,43 +407,17 @@
 											"boxes": [
 												{
 													"coordinates": [-1, -1, -0.08, 1, 1, 1.075],
-													"uvNorth": [34, 36, 35, 37],
-													"uvEast": [36, 36, 35, 37],
-													"uvSouth": [35, 36, 34, 37],
-													"uvWest": [35, 36, 36, 37],
-													"uvUp": [35, 36, 34, 37],
-													"uvDown": [35, 36, 36, 37],
+													"uvNorth": [24, 29, 25, 30],
+													"uvEast": [26, 29, 25, 30],
+													"uvSouth": [25, 29, 24, 30],
+													"uvWest": [25, 29, 26, 30],
+													"uvUp": [25, 29, 24, 30],
+													"uvDown": [24, 29, 25, 30],
 													"sizeAdd": 0.015
 												}
 											]
 										}
 									]
-								}
-							]
-						},
-						{
-							"id": "mushroom1",
-							"invertAxis": "xy",
-							"translate": [0, 4, -3],
-							"rotate": [0, 33, 0],
-							"boxes": [
-								{
-									"coordinates": [0, -0.25, -6, 0, 7, 12],
-									"uvNorth": [54, 38, 60, 46],
-									"uvEast": [51, 35, 64, 43],
-									"uvSouth": [54, 38, 60, 46],
-									"uvWest": [54, 38, 60, 46],
-									"uvUp": [54, 38, 60, 46],
-									"uvDown": [54, 38, 60, 46]
-								},
-								{
-									"coordinates": [-6, -0.25, 0, 12, 7, 0],
-									"uvNorth": [51, 35, 64, 43],
-									"uvEast": [51, 41, 58, 49],
-									"uvSouth": [51, 41, 58, 49],
-									"uvWest": [51, 41, 58, 49],
-									"uvUp": [51, 41, 58, 49],
-									"uvDown": [51, 41, 58, 49]
 								}
 							]
 						}
@@ -510,20 +492,14 @@
 					"tail.rx": "torad(5) +torad(30)*limb_speed +( cos(var.ls)/4 *limb_speed)*var.run +(-cos(var.ls*2)/3 *limb_speed)*var.walk +if(!is_on_ground&&is_in_water, torad(10) -sin(var.swim)/8, 0) +sin(var.b)/20",
 					"tail.ry": "( cos(var.ls)/10 *limb_speed)*var.run +(sin(torad(-45)+var.ls)/3*limb_speed)*var.walk +torad(var.hy)/12*clamp(1-limb_speed, 0, 1)",
 					"mushroom1.visible": "!is_child",
-					"mushroom2.visible": "true",
+					"mushroom2.visible": "!is_child",
 					"mushroom3.visible": "!is_child",
-					"mushroom4.visible": "!is_child",
-					"mushroom2.sx": "if(is_child, 1.5, 1)",
-					"mushroom2.sy": "if(is_child, 1.5, 1)",
-					"mushroom2.sz": "if(is_child, 1.5, 1)",
-					"mushroom2.tx": "if(is_child, 0, -2  )",
-					"mushroom2.ty": "if(is_child, 0, -2.3)",
 					"mushroom1.rx": "torad( 8 ) +(sin(torad( 45)+var.ls)/6 -torad(20))*limb_speed",
-					"mushroom2.rx": "torad(-275) +(sin(torad( 90)+var.ls)/8 -torad(10))*limb_speed",
+					"mushroom2.rx": "torad(-85) +(sin(torad( 90)+var.ls)/8 -torad(10))*limb_speed",
 					"mushroom3.rx": "torad(-99) +(sin(torad( 90)+var.ls)/8 -torad(20))*limb_speed",
 					"mushroom1.rz": "            (sin(torad( 45)+var.ls)/8 +torad(10))*limb_speed",
-					"mushroom2.ry": "torad( 187 ) +(sin(torad( 90)+var.ls)/8 -torad(20))*limb_speed",
-					"mushroom3.ry": "torad( -5 ) +(sin(torad( 0 )+var.ls)/8           )*limb_speed",
+					"mushroom2.ry": "torad(-5 ) +(sin(torad( 90)+var.ls)/8 -torad(20))*limb_speed",
+					"mushroom3.ry": "torad( 5 ) +(sin(torad( 0 )+var.ls)/8           )*limb_speed",
 					"adult_horns.visible": "!is_child",
 					"baby_horns.visible": "  is_child"
 				},
@@ -583,7 +559,7 @@
 			"id": "leg1",
 			"invertAxis": "xy",
 			"translate": [4, 0, -7],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -602,7 +578,7 @@
 			"id": "leg2",
 			"invertAxis": "xy",
 			"translate": [-4, 0, -7],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -621,7 +597,7 @@
 			"id": "leg3",
 			"invertAxis": "xy",
 			"translate": [4, 0, 5],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -640,7 +616,7 @@
 			"id": "leg4",
 			"invertAxis": "xy",
 			"translate": [-4, 0, 5],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
