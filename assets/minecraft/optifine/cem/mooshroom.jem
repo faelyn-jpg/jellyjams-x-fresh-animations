@@ -7,7 +7,7 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -19, -2],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"submodels": [
 				{
@@ -74,23 +74,16 @@
 							]
 						},
 						{
-							"id": "mushroom4",
+							"id": "mushroom2",
 							"invertAxis": "xy",
-							"translate": [3, 6, 9],
-							"rotate": [90, 0, 0.5],
+							"translate": [2, 2, 9],
+							"rotate": [90, 0, -39],
 							"boxes": [
 								{
-									"coordinates": [-0.10449, -0.25, -3.05282, 0, 5, 6],
-									"uvWest": [22, 44, 28, 48]
+									"coordinates": [0, -0.25, -6, 0, 7, 12]
 								},
 								{
-									"coordinates": [-3.10449, -0.25, -0.05282, 6, 5, 0],
-									"uvNorth": [22, 44, 28, 48],
-									"uvEast": [22, 44, 28, 48],
-									"uvSouth": [22, 44, 28, 48],
-									"uvWest": [22, 44, 28, 48],
-									"uvUp": [22, 43, 28, 49],
-									"uvDown": [22, 43, 29, 48]
+									"coordinates": [-6, -0.25, 0, 12, 7, 0]
 								}
 							]
 						},
@@ -98,32 +91,27 @@
 							"id": "mushroom3",
 							"invertAxis": "xy",
 							"translate": [-3, -6, 9],
-							"rotate": [90, 0, 0.5],
+							"rotate": [90, 0, 3],
 							"boxes": [
 								{
-									"coordinates": [4, -0.25, -5, 0, 5, 6],
-									"uvWest": [0, 44, 6, 48]
+									"coordinates": [0, -0.25, -6, 0, 7, 12]
 								},
 								{
-									"coordinates": [1, -0.25, -2, 6, 5, 0],
-									"uvNorth": [0, 44, 6, 48]
+									"coordinates": [-6, -0.25, 0, 12, 7, 0]
 								}
 							]
 						},
 						{
-							"id": "mushroom2",
+							"id": "mushroom",
 							"invertAxis": "xy",
-							"translate": [-8, 3, 9],
-							"rotate": [90, 0, -91.5],
+							"translate": [0, 6, -4],
 							"boxes": [
-								{
-									"coordinates": [0, -0.55, -7.1, 0, 4, 4],
-									"uvWest": [13, 44, 17, 48]
-								},
-								{
-									"coordinates": [-2, -0.55, -5.37604, 4, 4, 0],
-									"uvNorth": [13, 44, 17, 48]
-								}
+								{"coordinates": [0, 0, 13, 6, 0, 4], "textureOffset": [18, 44]},
+								{"coordinates": [3, -3, 13, 0, 6, 4], "textureOffset": [22, 45]},
+								{"coordinates": [-3, -5, 13, 0, 4, 4], "textureOffset": [13, 45]},
+								{"coordinates": [-5, -3, 13, 4, 0, 4], "textureOffset": [9, 44]},
+								{"coordinates": [1, -13, 13, 0, 6, 4], "textureOffset": [4, 45]},
+								{"coordinates": [-2, -10, 13, 6, 0, 4], "textureOffset": [-4, 44]}
 							]
 						}
 					]
@@ -420,22 +408,10 @@
 							"rotate": [0, 33, 0],
 							"boxes": [
 								{
-									"coordinates": [0, -0.25, -6, 0, 7, 12],
-									"uvNorth": [54, 38, 60, 46],
-									"uvEast": [51, 35, 64, 43],
-									"uvSouth": [54, 38, 60, 46],
-									"uvWest": [54, 38, 60, 46],
-									"uvUp": [54, 38, 60, 46],
-									"uvDown": [54, 38, 60, 46]
+									"coordinates": [0, -0.25, -6, 0, 7, 12]
 								},
 								{
-									"coordinates": [-6, -0.25, 0, 12, 7, 0],
-									"uvNorth": [51, 35, 64, 43],
-									"uvEast": [51, 41, 58, 49],
-									"uvSouth": [51, 41, 58, 49],
-									"uvWest": [51, 41, 58, 49],
-									"uvUp": [51, 41, 58, 49],
-									"uvDown": [51, 41, 58, 49]
+									"coordinates": [-6, -0.25, 0, 12, 7, 0]
 								}
 							]
 						}
@@ -583,7 +559,7 @@
 			"id": "leg1",
 			"invertAxis": "xy",
 			"translate": [4, 0, -7],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -602,7 +578,7 @@
 			"id": "leg2",
 			"invertAxis": "xy",
 			"translate": [-4, 0, -7],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -621,7 +597,7 @@
 			"id": "leg3",
 			"invertAxis": "xy",
 			"translate": [4, 0, 5],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
@@ -640,7 +616,7 @@
 			"id": "leg4",
 			"invertAxis": "xy",
 			"translate": [-4, 0, 5],
-			"texture": "red_mooshroom.png",
+			"texture": "textures/entity/cow/red_mooshroom.png",
 			"textureSize": [64, 57],
 			"boxes": [
 				{
