@@ -48,7 +48,7 @@
 					"invertAxis": "xy",
 					"translate": [0, 18, -8],
 					"boxes": [
-						{"coordinates": [-3, -2, -5, 6, 6, 8], "textureOffset": [0, 0]},
+						{"coordinates": [-3, -2, -5, 6, 6, 7.5], "textureOffset": [1, 1]},
 						{"coordinates": [-4, 3, -3, 3, 2, 3], "textureOffset": [16, 19]},
 						{"coordinates": [-5, 2, -1, 2, 2, 2], "textureOffset": [56, 12]},
 						{"coordinates": [-5, -1, -1, 2, 3, 2], "textureOffset": [50, 9], "sizeAdd": -0.01},
@@ -287,7 +287,7 @@
 			],
 			"animations": [
 				{
-					"var.hy": "clamp(head_yaw,-90,60)",
+					"var.hy": "clamp(head_yaw,-90,90)",
 					"var.child_scale": "if(is_child, 0.5, 1)",
 					"var.r": "random(id)*pi*4",
 					"var.ls": "limb_swing*if(is_child, 0.55, 0.85)",
