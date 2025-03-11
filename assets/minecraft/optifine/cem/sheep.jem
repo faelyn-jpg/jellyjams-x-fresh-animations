@@ -284,7 +284,7 @@
 			],
 			"animations": [
 				{
-					"var.hy": "clamp(head_yaw,-90,90)",
+					"var.hy": "clamp(head_yaw,-90,60)",
 					"var.child_scale": "if(is_child, 0.5, 1)",
 					"var.r": "random(id)*pi*4",
 					"var.ls": "limb_swing*if(is_child, 0.55, 0.85)",
@@ -351,12 +351,12 @@
 					"ctrl_l_pupil.tx": " 0.5 -var.hy/80 +clamp(sin(var.r+age/27) +sin(var.r+age/16), -0.1, 0.1)*clamp(-20*2 -cos(var.r+age/125)*30*2, 0, 1)*clamp(59*4 -sin(var.r+age/187)*60*4, 0, 1)",
 					"right_blink.sy": "clamp((1.5 -abs(sin(var.r+age/9.5)*6))*clamp(-32 +cos((var.r+age/9.5)/1.5)*40 +cos((var.r+age/9.5)/4)*40, 0, 1), 0, 1)",
 					"left_blink.sy": " clamp((1.5 -abs(sin(var.r+age/9.5)*6))*clamp(-32 +cos((var.r+age/9.5)/1.5)*40 +cos((var.r+age/9.5)/4)*40, 0, 1), 0, 1)",
-					"right_ear.rx": "-torad(head_pitch)/2 -torad(var.hy)/3 +torad( 20 +45*clamp( (  sin(       pi/4 +(var.r+age)/2 ) +sin(       (var.r+age) )  ) *var.Rear -1 , 0 , 1 ) )",
-					"left_ear.rx": " -torad(head_pitch)/2 +torad(var.hy)/3 +torad( 20 +45*clamp( (  sin(       pi/4 +(var.r+age)/2 ) +sin(       (var.r+age) )  ) *var.Lear -1 , 0 , 1 ) )",
-					"right_ear.ry": "torad(20*limb_speed) -torad(var.hy)/3 +torad(     60*clamp( (  sin(-pi/8 +pi/4 +(var.r+age)/2 ) +sin(-pi/8 +(var.r+age) )  ) *var.Rear -1 , 0 , 1 ) )",
-					"left_ear.ry": "-torad(20*limb_speed) -torad(var.hy)/3 +torad(    -60*clamp( (  sin(-pi/8 +pi/4 +(var.r+age)/2 ) +sin(-pi/8 +(var.r+age) )  ) *var.Lear -1 , 0 , 1 ) )",
-					"right_ear.rz": "clamp(-torad(head_pitch)/2 +(-cos(pi/4+var.ls +cos(pi/4+var.ls)/3)/2*limb_speed )*var.run +(-cos(var.ls*2 +sin(var.ls*2)/2)/3*limb_speed)*var.walk +torad(var.hy)/2 -torad(10) +sin(torad(-45)+var.b)/20, -pi/2, pi/2 )",
-					"left_ear.rz": " clamp( torad(head_pitch)/2 +( cos(pi/4+var.ls +cos(pi/4+var.ls)/3)/2*limb_speed )*var.run +( cos(var.ls*2 +sin(var.ls*2)/2)/3*limb_speed)*var.walk +torad(var.hy)/2 +torad(10) -sin(torad(-45)+var.b)/20, -pi/2, pi/2 )"
+					"right_ear.rx": "-torad(head_pitch)/2 +torad( 0 +45*clamp( (  sin(       pi/4 +(var.r+age)/2 ) +sin(       (var.r+age) )  ) *var.Rear -1 , 0 , 1 ) )",
+					"left_ear.rx": " -torad(head_pitch)/2 +torad( 0 +45*clamp( (  sin(       pi/4 +(var.r+age)/2 ) +sin(       (var.r+age) )  ) *var.Lear -1 , 0 , 1 ) )",
+					"right_ear.ry": "torad(20*limb_speed)  +torad(     60*clamp( (  sin(-pi/8 +pi/4 +(var.r+age)/2 ) +sin(-pi/8 +(var.r+age) )  ) *var.Rear -1 , 0 , 1 ) )",
+					"left_ear.ry": "-torad(20*limb_speed)  +torad(    -60*clamp( (  sin(-pi/8 +pi/4 +(var.r+age)/2 ) +sin(-pi/8 +(var.r+age) )  ) *var.Lear -1 , 0 , 1 ) )",
+					"right_ear.rz": "clamp(-torad(head_pitch)/2 +(-cos(pi/4+var.ls +cos(pi/4+var.ls)/3)/2*limb_speed )*var.run +(-cos(var.ls*2 +sin(var.ls*2)/2)/3*limb_speed)*var.walk +torad(var.hy)/6 -torad(10) +sin(torad(-45)+var.b)/20, -pi/2, pi/2 )",
+					"left_ear.rz": " clamp( torad(head_pitch)/2 +( cos(pi/4+var.ls +cos(pi/4+var.ls)/3)/2*limb_speed )*var.run +( cos(var.ls*2 +sin(var.ls*2)/2)/3*limb_speed)*var.walk +torad(var.hy)/6 +torad(10) -sin(torad(-45)+var.b)/20, -pi/2, pi/2 )"
 				},
 				{
 					"right_eye.sz": "if(between(player_pos_x-pos_x, -30, 30)&&between(player_pos_y-pos_y, -30, 30)&&between(player_pos_z-pos_z, -30, 30), 1, 2)",
