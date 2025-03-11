@@ -239,20 +239,20 @@
 						{
 							"id": "left_ear",
 							"invertAxis": "xy",
-							"translate": [0, 2, -3],
-							"rotate": [180, 0, -152.5],
+							"translate": [-3, 3, -2],
+							"rotate": [0, 0, 27.5],
 							"boxes": [
-								{"coordinates": [0.54804, -0.15301, -2, 5, 2, 2], "textureOffset": [20, 4]}
+								{"coordinates": [-3.352, -2.4, -1, 5, 2, 2], "textureOffset": [20, 4]}
 							]
 						},
 						{
 							"id": "right_ear",
 							"invertAxis": "xy",
-							"translate": [0, 2, -3],
+							"translate": [3, 3, -2],
 							"rotate": [0, 0, -27.5],
 							"boxes": [
 								{
-									"coordinates": [0.54804, -0.15301, 0, 5, 2, 2],
+									"coordinates": [-1.7, -2.4, -1, 5, 2, 2],
 									"uvNorth": [38, 6, 43, 8],
 									"uvEast": [36, 6, 38, 8],
 									"uvSouth": [45, 6, 50, 8],
