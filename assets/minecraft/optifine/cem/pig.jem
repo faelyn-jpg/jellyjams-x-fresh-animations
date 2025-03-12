@@ -292,15 +292,17 @@
 					"rotate": [-90, 0, 0],
 					"boxes": [
 						{"coordinates": [-5.5, -8, -2, 11, 17, 10], "textureOffset": [22, 10]}
-					]
-				},
-				{
-					"id": "tail",
-					"invertAxis": "xy",
-					"translate": [0, 7, 1],
-					"rotate": [-125, 0, 0],
-					"boxes": [
-						{"coordinates": [-4, -18.38894, 1.55718, 8, 8, 0], "textureOffset": [48, 46]}
+					],
+					"submodels": [
+						{
+							"id": "tail",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"rotate": [-35, 0, 0],
+							"boxes": [
+								{"coordinates": [-4, -17.53456, 1.71018, 8, 8, 0], "textureOffset": [48, 46]}
+							]
+						}
 					]
 				}
 			],
