@@ -81,11 +81,11 @@
 					"chin2.rz": "(sin(torad(90)+var.float2)/5)*var.float +((-sin(var.ls)/3)*limb_speed*var.run +(-sin(var.ls_walk)/3)*limb_speed*var.walk )*var.land +clamp(torad(var.hy), torad(-90), torad(90))/3*limb_speed",
 					"chin2.ty": "-2",
 					"chin2.sy": "if(is_child, 0.5, 1)",
-					"comb.rz": "torad(10) +(sin(torad(-90)+var.float2)/6)*var.float +(-sin(torad(-45)+var.b)/30 +(sin(var.ls)/3)*limb_speed*var.run +(sin(var.ls_walk)/3)*limb_speed*var.walk )*var.land",
+					"comb.rz": "torad(0.1) +(sin(torad(-90)+var.float2)/6)*var.float +(-sin(torad(-45)+var.b)/30 +(sin(var.ls)/35)*limb_speed*var.run +(sin(var.ls_walk)/30)*limb_speed*var.walk )*var.land",
 					"comb.rx": "(-cos(var.r+var.t)/4)*var.eat",
-					"feathers.rx": "torad(-90) +(-sin(var.float1)/4)*var.float +(-sin(torad(45)+var.ls*2)/4*limb_speed*var.run -sin(torad(45)+var.ls_walk*2)/4*limb_speed*var.walk)*var.land",
+					"feathers.rx": "torad(0) +(-sin(var.float1)/4)*var.float +(-sin(torad(45)+var.ls*2)/10*limb_speed*var.run -sin(torad(45)+var.ls_walk*2)/10*limb_speed*var.walk)*var.land",
 					"feathers.ry": "(-sin(var.ls)/3)*limb_speed*var.run +(-sin(var.ls_walk)/3)*limb_speed*var.walk",
-					"feathers.rz": "(sin(torad( 90)+var.float2)/4)*var.float +(-sin(torad(20)+var.ls)/3*limb_speed*var.run  -sin(torad(20)+var.ls_walk)/3*limb_speed*var.walk )*var.land",
+					"feathers.rz": "(sin(torad( 90)+var.float2)/4)*var.float +(-sin(torad(10)+var.ls)/10*limb_speed*var.run  -sin(torad(10)+var.ls_walk)/10*limb_speed*var.walk )*var.land",
 					"right_eyelid.tz": "0",
 					"left_eyelid.tz": " 0",
 					"right_blink.sy": "clamp((1.5 -abs(sin(var.r+var.t/5)*6))*clamp(-32 +cos((var.r+var.t/5)/1.5)*40 +cos((var.r+var.t/5)/4)*40, 0, 1), 0, 1)",
@@ -134,8 +134,17 @@
 					"translate": [0, 8, 0],
 					"rotate": [-90, 0, 0],
 					"boxes": [
-						{"coordinates": [-2, -7, 0, 4, 4, 5], "textureOffset": [42, 7]},
 						{"coordinates": [-3, -5, -4, 6, 9, 7], "textureOffset": [0, 12]}
+					],
+					"submodels": [
+						{
+							"id": "feathers",
+							"invertAxis": "xy",
+							"translate": [0, -2, 1],
+							"boxes": [
+								{"coordinates": [-2, -5, -1, 4, 4, 5], "textureOffset": [42, 7]}
+							]
+						}
 					]
 				},
 				{
@@ -145,7 +154,8 @@
 					"boxes": [
 						{"coordinates": [-2, -3, -1.5, 4, 7, 4], "textureOffset": [30, 0]},
 						{"coordinates": [-1.5, 3.1, -1.7, 3, 3, 3], "textureOffset": [26, 19]},
-						{"coordinates": [-1.5, 1.1, -0.7, 3, 3, 3], "textureOffset": [35, 16]}
+						{"coordinates": [-1.5, 1.1, -0.7, 3, 3, 3], "textureOffset": [35, 16]},
+						{"coordinates": [-0.5, 5, -2, 1, 2, 2], "textureOffset": [4, 6]}
 					],
 					"submodels": [
 						{
@@ -153,7 +163,6 @@
 							"invertAxis": "xy",
 							"translate": [0, 0, 0],
 							"boxes": [
-								{"coordinates": [-0.5, 5, -2, 1, 2, 2], "textureOffset": [4, 6]},
 								{"coordinates": [0, 6, -3.1, 0, 3, 3], "textureOffset": [0, 2]}
 							]
 						},
