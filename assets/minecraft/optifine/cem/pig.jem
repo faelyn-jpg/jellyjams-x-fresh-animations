@@ -7,7 +7,7 @@
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -7, -1],
-			"texture": "random/entity/pig/pig.png",
+			"texture": "pig.png",
 			"textureSize": [64, 55],
 			"submodels": [
 				{
@@ -450,7 +450,7 @@
 			"id": "leg1",
 			"invertAxis": "xy",
 			"translate": [3, 0, -7],
-			"texture": "random/entity/pig/pig.png",
+			"texture": "pig.png",
 			"textureSize": [64, 55],
 			"boxes": [
 				{"coordinates": [1, 0, 5, 3, 6, 3], "textureOffset": [1, 17]}
@@ -461,7 +461,7 @@
 			"id": "leg2",
 			"invertAxis": "xy",
 			"translate": [-3, 0, -7],
-			"texture": "random/entity/pig/pig.png",
+			"texture": "pig.png",
 			"textureSize": [64, 55],
 			"submodels": [
 				{
@@ -479,7 +479,7 @@
 			"id": "leg3",
 			"invertAxis": "xy",
 			"translate": [3, 0, 5],
-			"texture": "random/entity/pig/pig.png",
+			"texture": "pig.png",
 			"textureSize": [64, 55],
 			"boxes": [
 				{"coordinates": [1, 0, -7, 3, 6, 3], "textureOffset": [1, 17]}
@@ -490,7 +490,7 @@
 			"id": "leg4",
 			"invertAxis": "xy",
 			"translate": [-3, 0, 5],
-			"texture": "random/entity/pig/pig.png",
+			"texture": "pig.png",
 			"textureSize": [64, 55],
 			"submodels": [
 				{
