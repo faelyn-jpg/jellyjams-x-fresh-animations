@@ -1,12 +1,14 @@
 {
 	"credit": "Created by FreshLX for Fresh Animations",
-	"textureSize": [256, 128],
+	"textureSize": [64, 55],
 	"models": [
 		{
 			"part": "body",
 			"id": "body",
 			"invertAxis": "xy",
 			"translate": [0, -7, -1],
+			"texture": "random/entity/pig/pig.png",
+			"textureSize": [64, 55],
 			"submodels": [
 				{
 					"id": "Created_by_FreshLX_for_Fresh_Animations",
@@ -18,80 +20,16 @@
 					"invertAxis": "xy",
 					"translate": [0, 12, -6],
 					"boxes": [
-						{
-							"coordinates": [-4, -4, -8, 8, 8, 8],
-							"uvNorth": [32, 32, 64, 64],
-							"uvEast": [0, 32, 32, 64],
-							"uvSouth": [96, 32, 128, 64],
-							"uvWest": [64, 32, 96, 64],
-							"uvUp": [64, 32, 32, 0],
-							"uvDown": [96, 0, 64, 32]
-						},
-						{
-							"coordinates": [-3, 4, -7, 4, 1, 4],
-							"uvNorth": [16, 120, 32, 124],
-							"uvEast": [0, 120, 16, 124],
-							"uvSouth": [48, 120, 64, 124],
-							"uvWest": [32, 120, 48, 124],
-							"uvUp": [32, 120, 16, 104],
-							"uvDown": [48, 104, 32, 120]
-						}
+						{"coordinates": [-5, -4, -5, 10, 9, 7], "textureOffset": [0, 39]},
+						{"coordinates": [-4, -3, -7, 8, 7, 4], "textureOffset": [4, 4]}
 					],
 					"submodels": [
-						{
-							"id": "tusks",
-							"invertAxis": "xy",
-							"translate": [0, -2, -8],
-							"boxes": [
-								{
-									"coordinates": [2, -1, -1, 1, 2, 1],
-									"uvNorth": [12, 4, 16, 12],
-									"uvEast": [16, 4, 20, 12],
-									"uvSouth": [20, 4, 24, 12],
-									"uvWest": [8, 4, 12, 12],
-									"uvUp": [16, 4, 12, 0],
-									"uvDown": [20, 4, 16, 0]
-								},
-								{
-									"coordinates": [-3, -1, -1, 1, 2, 1],
-									"uvNorth": [12, 20, 16, 28],
-									"uvEast": [16, 20, 20, 28],
-									"uvSouth": [20, 20, 24, 28],
-									"uvWest": [8, 20, 12, 28],
-									"uvUp": [16, 20, 12, 16],
-									"uvDown": [20, 20, 16, 16]
-								}
-							]
-						},
-						{
-							"id": "plant",
-							"invertAxis": "xy",
-							"translate": [-1, 5, -5],
-							"boxes": [
-								{
-									"coordinates": [-5, 0, 0, 8, 8, 0],
-									"uvNorth": [96, 0, 128, 32],
-									"uvEast": [0, 0, 0, 32],
-									"uvWest": [0, 0, 0, 32],
-									"uvUp": [0, 0, 32, 0],
-									"uvDown": [0, 0, 32, 0]
-								}
-							]
-						},
 						{
 							"id": "nose",
 							"invertAxis": "xy",
 							"translate": [0, -1.5, -8],
 							"boxes": [
-								{
-									"coordinates": [-2, -1.5, -1, 4, 3, 2],
-									"uvNorth": [68, 68, 84, 80],
-									"uvEast": [64, 68, 68, 80],
-									"uvSouth": [88, 68, 104, 80],
-									"uvWest": [84, 68, 88, 80],
-									"uvUp": [84, 68, 68, 64],
-									"uvDown": [100, 64, 84, 68]
-								}
+								{"coordinates": [-2, -0.5, -1, 4, 3, 2], "textureOffset": [0, 26]}
 							]
 						},
 						{
@@ -100,15 +38,7 @@
 							"translate": [-4, 2, -5],
 							"rotate": [0, 0, -20],
 							"boxes": [
-								{
-									"coordinates": [-0.5, -4, -2, 1, 4, 4],
-									"uvNorth": [84, 100, 88, 116],
-									"uvEast": [68, 100, 84, 116],
-									"uvSouth": [104, 100, 108, 116],
-									"uvWest": [88, 100, 104, 116],
-									"uvUp": [88, 100, 84, 84],
-									"uvDown": [92, 84, 88, 100]
-								}
+								{"coordinates": [-3, 0, 1.9, 3, 4, 1], "textureOffset": [34, 45]}
 							]
 						},
 						{
@@ -120,18 +50,9 @@
 								{
 									"id": "body_sub_6",
 									"invertAxis": "xy",
-									"mirrorTexture": "u",
 									"translate": [0, 0, 0],
 									"boxes": [
-										{
-											"coordinates": [-0.5, -4, -2, 1, 4, 4],
-											"uvNorth": [84, 100, 88, 116],
-											"uvEast": [68, 100, 84, 116],
-											"uvSouth": [104, 100, 108, 116],
-											"uvWest": [88, 100, 104, 116],
-											"uvUp": [88, 100, 84, 84],
-											"uvDown": [92, 84, 88, 100]
-										}
+										{"coordinates": [0, 0, 1.9, 3, 4, 1], "textureOffset": [34, 50]}
 									]
 								}
 							]
@@ -370,15 +291,16 @@
 					"translate": [0, 7, 1],
 					"rotate": [-90, 0, 0],
 					"boxes": [
-						{
-							"coordinates": [-5, -7, -1, 10, 16, 8],
-							"uvNorth": [144, 64, 184, 128],
-							"uvEast": [112, 64, 144, 128],
-							"uvSouth": [216, 64, 256, 128],
-							"uvWest": [184, 64, 216, 128],
-							"uvUp": [184, 64, 144, 32],
-							"uvDown": [224, 32, 184, 64]
-						}
+						{"coordinates": [-5.5, -8, -2, 11, 17, 10], "textureOffset": [22, 10]}
+					]
+				},
+				{
+					"id": "tail",
+					"invertAxis": "xy",
+					"translate": [0, 7, 1],
+					"rotate": [-125, 0, 0],
+					"boxes": [
+						{"coordinates": [-4, -18.38894, 1.55718, 8, 8, 0], "textureOffset": [48, 46]}
 					]
 				}
 			],
@@ -528,16 +450,10 @@
 			"id": "leg1",
 			"invertAxis": "xy",
 			"translate": [3, 0, -7],
+			"texture": "random/entity/pig/pig.png",
+			"textureSize": [64, 55],
 			"boxes": [
-				{
-					"coordinates": [-5, 0, 5, 4, 6, 4],
-					"uvNorth": [16, 80, 32, 104],
-					"uvEast": [0, 80, 16, 104],
-					"uvSouth": [48, 80, 64, 104],
-					"uvWest": [32, 80, 48, 104],
-					"uvUp": [32, 80, 16, 64],
-					"uvDown": [48, 64, 32, 80]
-				}
+				{"coordinates": [1, 0, 5, 3, 6, 3], "textureOffset": [1, 17]}
 			]
 		},
 		{
@@ -545,22 +461,15 @@
 			"id": "leg2",
 			"invertAxis": "xy",
 			"translate": [-3, 0, -7],
+			"texture": "random/entity/pig/pig.png",
+			"textureSize": [64, 55],
 			"submodels": [
 				{
 					"id": "leg2_sub_0",
 					"invertAxis": "xy",
-					"mirrorTexture": "u",
 					"translate": [0, 0, 0],
 					"boxes": [
-						{
-							"coordinates": [1, 0, 5, 4, 6, 4],
-							"uvNorth": [16, 80, 32, 104],
-							"uvEast": [0, 80, 16, 104],
-							"uvSouth": [48, 80, 64, 104],
-							"uvWest": [32, 80, 48, 104],
-							"uvUp": [32, 80, 16, 64],
-							"uvDown": [48, 64, 32, 80]
-						}
+						{"coordinates": [-4, 0, 5, 3, 6, 3], "textureOffset": [1, 17]}
 					]
 				}
 			]
@@ -570,16 +479,10 @@
 			"id": "leg3",
 			"invertAxis": "xy",
 			"translate": [3, 0, 5],
+			"texture": "random/entity/pig/pig.png",
+			"textureSize": [64, 55],
 			"boxes": [
-				{
-					"coordinates": [-5, 0, -7, 4, 6, 4],
-					"uvNorth": [16, 80, 32, 104],
-					"uvEast": [0, 80, 16, 104],
-					"uvSouth": [48, 80, 64, 104],
-					"uvWest": [32, 80, 48, 104],
-					"uvUp": [32, 80, 16, 64],
-					"uvDown": [48, 64, 32, 80]
-				}
+				{"coordinates": [1, 0, -7, 3, 6, 3], "textureOffset": [1, 17]}
 			]
 		},
 		{
@@ -587,22 +490,15 @@
 			"id": "leg4",
 			"invertAxis": "xy",
 			"translate": [-3, 0, 5],
+			"texture": "random/entity/pig/pig.png",
+			"textureSize": [64, 55],
 			"submodels": [
 				{
 					"id": "leg4_sub_0",
 					"invertAxis": "xy",
-					"mirrorTexture": "u",
 					"translate": [0, 0, 0],
 					"boxes": [
-						{
-							"coordinates": [1, 0, -7, 4, 6, 4],
-							"uvNorth": [16, 80, 32, 104],
-							"uvEast": [0, 80, 16, 104],
-							"uvSouth": [48, 80, 64, 104],
-							"uvWest": [32, 80, 48, 104],
-							"uvUp": [32, 80, 16, 64],
-							"uvDown": [48, 64, 32, 80]
-						}
+						{"coordinates": [-4, 0, -7, 3, 6, 3], "textureOffset": [1, 17]}
 					]
 				}
 			]
@@ -614,64 +510,74 @@
 			"translate": [0, 0, 0]
 		},
 		{
-			"part":"body",
-			"id":"head_part",
-			"model":"pig_head.jpm",
-			"attach":"true"
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"body",
-			"id":"body_part",
-			"model":"pig_body.jpm",
-			"attach":"true"
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg1",
-			"id":"leg1_part",
-			"model":"pig_leg_lb.jpm",
-			"attach":"true"
-		},
-		{	
-			"part":"leg2",
-			"id":"leg2_part",
-			"model":"pig_leg_rb.jpm",
-			"attach":"true"
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg3",
-			"id":"leg3_part",
-			"model":"pig_leg_lf.jpm",
-			"attach":"true"
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg4",
-			"id":"leg4_part",
-			"model":"pig_leg_rf.jpm",
-			"attach":"true"
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg1",
-			"id":"leg1_part",
-			"model":"pig_legs.jpm",
-			"attach":"true"
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg2",
-			"id":"leg2_part",
-			"model":"pig_legs.jpm",
-			"attach":"true"
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg3",
-			"id":"leg3_part",
-			"model":"pig_legs.jpm",
-			"attach":"true"
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		},
 		{
-			"part":"leg4",
-			"id":"leg4_part",
-			"model":"pig_legs.jpm",
-			"attach":"true"
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
 		}
 	]
 }
