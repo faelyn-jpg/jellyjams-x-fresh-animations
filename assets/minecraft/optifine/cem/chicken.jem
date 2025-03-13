@@ -89,12 +89,8 @@
 					"left_eyelid.tz": " 0",
 					"right_blink.sy": "clamp((1.5 -abs(sin(var.r+var.t/5)*6))*clamp(-32 +cos((var.r+var.t/5)/1.5)*40 +cos((var.r+var.t/5)/4)*40, 0, 1), 0, 1)",
 					"left_blink.sy": "  right_blink.sy",
-					"right_blink2.sy": "right_blink.sy",
-					"left_blink2.sy": " right_blink.sy",
 					"right_blink.sz": "if(right_eyelid.sy==0||right_blink.sy==0, 0, 1)",
-					"left_blink.sz": " if( left_eyelid.sy==0|| left_blink.sy==0, 0, 1)",
-					"right_blink2.sz": "if(right_eyelid.sy==0||right_blink2.sy==0, 0, 1)",
-					"left_blink2.sz": " if( left_eyelid.sy==0|| left_blink2.sy==0, 0, 1)"
+					"left_blink.sz": " if( left_eyelid.sy==0|| left_blink.sy==0, 0, 1)"
 				},
 				{
 					"head_part.rx": "head2.rx",
@@ -191,7 +187,16 @@
 											"invertAxis": "xy",
 											"translate": [0.5, 0.9, 0],
 											"boxes": [
-												{"coordinates": [-0.5, -1, 0, 1, 1, 0.03], "textureOffset": [29, 23], "sizeAdd": 0.005}
+												{
+													"coordinates": [-0.5, -1, 0, 1, 1, 0.03],
+													"uvNorth": [29, 23, 30, 24],
+													"uvEast": [29, 23, 30, 24],
+													"uvSouth": [30, 23, 31, 24],
+													"uvWest": [30, 23, 31, 24],
+													"uvUp": [30, 23, 29, 24],
+													"uvDown": [31, 23, 30, 24],
+													"sizeAdd": 0.005
+												}
 											]
 										}
 									]
@@ -227,7 +232,16 @@
 											"invertAxis": "xy",
 											"translate": [0.5, 0.9, 0],
 											"boxes": [
-												{"coordinates": [-0.5, -1, 0, 1, 1, 0.03], "textureOffset": [29, 23], "sizeAdd": 0.005}
+												{
+													"coordinates": [-0.5, -1, 0, 1, 1, 0.03],
+													"uvNorth": [29, 23, 30, 24],
+													"uvEast": [29, 23, 30, 24],
+													"uvSouth": [30, 23, 31, 24],
+													"uvWest": [30, 23, 31, 24],
+													"uvUp": [30, 23, 29, 24],
+													"uvDown": [31, 23, 30, 24],
+													"sizeAdd": 0.005
+												}
 											]
 										}
 									]
