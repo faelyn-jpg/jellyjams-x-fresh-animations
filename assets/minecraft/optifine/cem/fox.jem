@@ -267,8 +267,8 @@
 				},
 				{
 					"head2.rx": "-if(!is_on_ground&&is_in_water, torad(10), (-sin(torad(-90)+var.ls)/8*limb_speed)*var.run ) +if(is_on_ground||is_in_water, -body.rx +torad(head_pitch)/1.3, torad(-90)) +if(var.sleep==1, torad(88) +cos(torad(45)+var.b)/40, is_sitting, if(is_on_ground, 0, torad(60)), 0)",
-					"head2.ry": " if(!is_on_ground&&is_in_water, 0, (sin(torad(5) +var.ls)/10*limb_speed)*var.walk ) +if(var.sleep==1, if(is_child, torad(-10), torad(-22)), var.pounce==1, -body.ry*2, 0) +torad(var.hy)*if(is_sitting, 0.7, 0) -torad(var.hy)/20",
-					"head2.rz": "-if(!is_on_ground&&is_in_water, 0, if(var.sleep==1, if(is_child, torad(-85), torad(-80)), 0)*var.walk ) +body.ry -sin(torad(var.hy))/if(is_sitting, 3, 1.5)",
+					"head2.ry": " if(!is_on_ground&&is_in_water, 0, (sin(torad(5) +var.ls)/10*limb_speed)*var.walk ) +if(var.sleep==1, if(is_child, torad(-10), torad(-22)), var.pounce==1, -head.ry*2, 0) +torad(var.hy)*if(is_sitting, 0.6, 0) -torad(var.hy)/20",
+					"head2.rz": "-if(!is_on_ground&&is_in_water, 0, if(var.sleep==1, if(is_child, torad(-85), torad(-80)), 0)*var.walk ) +body.ry -torad(var.hy)/if(is_sitting, 3, 1.21)",
 					"head2.tx": "if(var.sleep==1, if(is_child, 3, 1), 0)",
 					"head2.tz": " 2  +if(is_child, 1.2, 0) +if(!is_on_ground&&is_in_water, -1, sin(torad(-45)+var.ls)*limb_speed*var.run ) +if(var.sleep==1, if(is_child, -0.5, 3), var.pounce==1, -1.5 +sin(var.b+torad(45))/4, is_sitting, -0.5, sin(var.b+torad(45))/4 +1)",
 					"head2.ty": "-13.5 +if(is_child, 0.5, 0) +if(!is_on_ground&&is_in_water,  1, is_sitting, if(is_child, -3, -0.5) +sin(var.b+torad(45))/4, 0)",
