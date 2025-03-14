@@ -37,12 +37,21 @@
 					]
 				},
 				{
+					"id": "tail2",
+					"invertAxis": "xy",
+					"translate": [0, 8.5, 10],
+					"rotate": [-90, 0, 0],
+					"boxes": [
+						{"coordinates": [-2, -8, -2.5, 4, 9, 5], "textureOffset": [38, 2]}
+					]
+				},
+				{
 					"id": "head2",
 					"invertAxis": "xy",
 					"translate": [0, 7.5, -3],
 					"boxes": [
-						{"coordinates": [-4, -4, -5, 8, 6, 6], "textureOffset": [1, 5]},
-						{"coordinates": [-6, -3, -2, 12, 3, 0], "textureOffset": [3, 41]}
+						{"coordinates": [-6, -3, -2, 12, 3, 0], "textureOffset": [3, 41]},
+						{"coordinates": [-4, -4, -5, 8, 6, 6], "textureOffset": [1, 5]}
 					],
 					"submodels": [
 						{
@@ -57,21 +66,21 @@
 						{
 							"id": "right_ear",
 							"invertAxis": "xy",
-							"translate": [2.5, 2, -3.5],
+							"translate": [2.5, 2, -1.5],
 							"boxes": [
-								{"coordinates": [-1.5, -1, 2, 4, 3, 0], "textureOffset": [33, 39]},
-								{"coordinates": [-0.5, 0, 1.5, 2, 3, 1], "textureOffset": [8, 1]},
-								{"coordinates": [0, 0, 2.5, 1, 1, 1], "textureOffset": [25, 1]}
+								{"coordinates": [-0.5, 0, -0.5, 2, 3, 1], "textureOffset": [8, 1]},
+								{"coordinates": [-1.5, -1, 0, 4, 3, 0], "textureOffset": [33, 39]},
+								{"coordinates": [0, 0, 0.5, 1, 1, 1], "textureOffset": [25, 1]}
 							]
 						},
 						{
 							"id": "left_ear",
 							"invertAxis": "xy",
-							"translate": [-2.5, 2, -3.5],
+							"translate": [-2.5, 2, -1.5],
 							"boxes": [
-								{"coordinates": [-2.5, -1, 2, 4, 3, 0], "textureOffset": [42, 39]},
-								{"coordinates": [-1.5, 0, 1.5, 2, 3, 1], "textureOffset": [15, 1]},
-								{"coordinates": [-1, 0, 2.5, 1, 1, 1], "textureOffset": [25, 1]}
+								{"coordinates": [-1.5, 0, -0.5, 2, 3, 1], "textureOffset": [15, 1]},
+								{"coordinates": [-2.5, -1, 0, 4, 3, 0], "textureOffset": [42, 39]},
+								{"coordinates": [-1, 0, 0.5, 1, 1, 1], "textureOffset": [25, 1]}
 							]
 						},
 						{
@@ -255,15 +264,6 @@
 							]
 						}
 					]
-				},
-				{
-					"id": "tail2",
-					"invertAxis": "xy",
-					"translate": [0, 8.5, 9.5],
-					"rotate": [-90, 0, 0],
-					"boxes": [
-						{"coordinates": [-2, -8.5, -2.5, 4, 9, 5], "textureOffset": [38, 2]}
-					]
 				}
 			],
 			"animations": [
@@ -286,7 +286,7 @@
 					"head2.ry": " if(!is_on_ground&&is_in_water, 0, (sin(torad(5) +var.ls)/10*limb_speed)*var.walk ) +if(var.sleep==1, if(is_child, torad(-10), torad(-22)), var.pounce==1, -body.ry*2, 0) +torad(var.hy)*if(is_sitting, 0.7, 0) -torad(var.hy)/20",
 					"head2.rz": "-if(!is_on_ground&&is_in_water, 0, if(var.sleep==1, if(is_child, torad(-85), torad(-80)), 0)*var.walk ) +body.ry -torad(var.hy)/if(is_sitting, 3, 1.5)",
 					"head2.tx": "if(var.sleep==1, if(is_child, 3, 1), 0)",
-					"head2.tz": " 4.5  +if(is_child, 1.2, 0) +if(!is_on_ground&&is_in_water, -1, sin(torad(-45)+var.ls)*limb_speed*var.run ) +if(var.sleep==1, if(is_child, -0.5, 0), var.pounce==1, -1.5 +sin(var.b+torad(45))/4, is_sitting, -0.5, sin(var.b+torad(45))/4 +1)",
+					"head2.tz": " 2  +if(is_child, 1.2, 0) +if(!is_on_ground&&is_in_water, -1, sin(torad(-45)+var.ls)*limb_speed*var.run ) +if(var.sleep==1, if(is_child, -0.5, 0), var.pounce==1, -1.5 +sin(var.b+torad(45))/4, is_sitting, -0.5, sin(var.b+torad(45))/4 +1)",
 					"head2.ty": "-13.5 +if(is_child, 0.5, 0) +if(!is_on_ground&&is_in_water,  1, is_sitting, if(is_child, -3, -0.5) +sin(var.b+torad(45))/4, 0)",
 					"head2.sx": "if(is_child, 1.5, 1)",
 					"head2.sy": "head2.sx",
